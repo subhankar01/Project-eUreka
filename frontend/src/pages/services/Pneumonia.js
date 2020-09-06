@@ -37,7 +37,7 @@ const Pneumonia = () => {
 					Get results
 				</button>
 				<div className="result">
-					<h3>{result && JSON.stringify(result)}</h3>
+					<h3>{result && result.disease_type}</h3>
 				</div>
 			</div>
 		</div>

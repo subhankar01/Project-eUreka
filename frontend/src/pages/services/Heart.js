@@ -14,7 +14,7 @@ const Cancer = () => {
 	const [sex, setSex] = useState(null);
 
 	const getResults = () => {
-		Axios.post("http://localhost:5000/predict/heart", {
+		Axios.post(`${process.env.REACT_APP_API_URL}/predict/heart`, {
 				age,
 				bp,
 				hbr,

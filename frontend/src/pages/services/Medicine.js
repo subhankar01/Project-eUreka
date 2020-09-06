@@ -7,9 +7,7 @@ import Axios from "axios";
 const Medicine = () => {
 	const token = useRecoilValue(tokenAtom);
 	const [enteredName, setEnteredName] = useState("");
-	const [commonNames, setCommonNames] = useState([
-		{ medicine_name: "noenenej", Price: 34, Source: "NetMeds" },
-	]);
+	const [commonNames, setCommonNames] = useState(null);
 
 	const getBrandNames = () => {
 		Axios.post(
@@ -56,29 +54,31 @@ const Medicine = () => {
 					<button className="primary" onClick={() => getBrandNames()}>
 						Parse
 					</button>
-					<div className="commons">
-						<label htmlFor="commons">Common Medicines</label>
-						<div className="result">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>General Price</th>
-										<th>Source</th>
-									</tr>
-								</thead>
-								<tbody>
-									{commonNames.map((med) => (
+					{commonNames && (
+						<div className="commons">
+							<label htmlFor="commons">Common Medicines</label>
+							<div className="result">
+								<table>
+									<thead>
 										<tr>
-											<td>{med.medicine_name}</td>
-											<td>{med.Price}</td>
-											<td>{med.Source}</td>
+											<th>Name</th>
+											<th>General Price</th>
+											<th>Source</th>
 										</tr>
-									))}
-								</tbody>
-							</table>
+									</thead>
+									<tbody>
+										{commonNames.map((med) => (
+											<tr>
+												<td>{med.medicine_name}</td>
+												<td>{med.Price}</td>
+												<td>{med.Source}</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
 						</div>
-					</div>
+					)}
 				</div>
 			</div>
 		</div>
