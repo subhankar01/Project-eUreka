@@ -27,9 +27,9 @@ const Home = ({ history }) => {
 							</div>
 						</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing
-							elit. Doloremque, quisquam dolorem voluptatibus
-							cupiditate deleniti amet maiores hic neque est iste.
+							A service to connect patients and doctors.
+							<br />Patients can book appointments 
+							and can get themeselves checked online and get prescribed.
 						</p>
 						<button className="primary cta" onClick={() => cta()}>
 							{user ? "Go To Dashboard" : "Get Started"}
@@ -49,10 +49,10 @@ const Home = ({ history }) => {
 								alt="Heart Icon"
 							/>
 							<div className="content">
-								<h4>Lorem Ipsum</h4>
+								<h4>Disease Predicition</h4>
 								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Beatae, tempore.
+									Predicition of Breast Cancer and Pneumonia from X-RAY Scans and also
+									patients can know the health status of their heart too.
 								</p>
 							</div>
 						</div>
@@ -62,10 +62,10 @@ const Home = ({ history }) => {
 								alt="Heart Icon"
 							/>
 							<div className="content">
-								<h4>Lorem Ipsum</h4>
+								<h4>General Name of Medicines</h4>
 								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Beatae, tempore.
+								Making brand names of medicines available to the patient 
+								by providing a generic name of the medicine, which are far cheaper and easily available
 								</p>
 							</div>
 						</div>
@@ -75,10 +75,9 @@ const Home = ({ history }) => {
 								alt="Heart Icon"
 							/>
 							<div className="content">
-								<h4>Lorem Ipsum</h4>
+								<h4>Book Appointment</h4>
 								<p>
-									Lorem ipsum dolor sit amet consectetur
-									adipisicing elit. Beatae, tempore.
+								Patients can book online appointments with a specific doctor and can get prescription afterwards
 								</p>
 							</div>
 						</div>

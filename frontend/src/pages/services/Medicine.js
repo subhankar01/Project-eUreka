@@ -36,9 +36,8 @@ const Medicine = () => {
 				<div className="top">
 					<h1>Common Medicine Names</h1>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Molestias aliquam cumque autem dicta asperiores, fugit
-						ex dolor magnam voluptate velit?
+					Making brand names of medicines available to the patient
+					by providing a generic name of the medicine, which are far cheaper and easily available.
 					</p>
 				</div>
 

@@ -38,11 +38,9 @@ const Cancer = () => {
 		<div className="Heart">
 			<div className="container">
 				<div>
-					<h1>Heart Health Predection</h1>
+					<h1>Heart Health Prediction</h1>
 					<p className="content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Fuga cupiditate repudiandae quos natus repellat?
-						Reiciendis excepturi maiores recusandae ipsam a.
+						Patients can know the health of their heart by providing very basic details.
 					</p>
 				</div>
 				<div className="heart-form">

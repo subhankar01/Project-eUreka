@@ -11,8 +11,13 @@ const Login = ({ history }) => {
 	const [errors, setErrors] = useState(null);
 	const [selected, setSelected] = useState("user");
 
+	var env = process.env.REACT_APP_API_URL;
+	if(!env) {
+		env = "http://localhost:5000"
+	}
+
 	const handleLoginUser = () => {
-		Axios.post(`${process.env.REACT_APP_API_URL}/patient/signin`, {
+		Axios.post(`${env}/patient/signin`, {
 			email,
 			password,
 		})
@@ -40,7 +45,7 @@ const Login = ({ history }) => {
 	};
 
 	const handleLoginDoc = () => {
-		Axios.post(`${process.env.REACT_APP_API_URL}/doctor/signin`, {
+		Axios.post(`${env}/doctor/signin`, {
 			email,
 			password,
 		})
@@ -77,8 +82,7 @@ const Login = ({ history }) => {
 						</div>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Quam dolorem quibusdam officia,
+						Welcome to the Unified HealthCare Platform
 					</p>
 				</div>
 				<img

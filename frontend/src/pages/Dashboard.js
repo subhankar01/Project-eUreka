@@ -5,19 +5,19 @@ import { userAtom } from "../global/globalState";
 
 const services = [
 	{
-		title: "Cancer Predection",
+		title: "Cancer Prediction",
 		image: require("../assets/icons/heart.png"),
 		imageAlt: "Heart Icon",
 		desc:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, aspernatur!",
+			"Breast Cancer detection which will be able to predict whether the cells are cancerous or not",
 		link: "/dashboard/cancer",
 	},
 	{
-		title: "Pneumonia Predection",
+		title: "Pneumonia Prediction",
 		image: require("../assets/icons/face.png"),
 		imageAlt: "Face Icon",
 		desc:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, aspernatur!",
+			"Prediction of Pneumonia and its type (Viral Or Bacterial) from the X-Ray Scans",
 		link: "/dashboard/pneumonia",
 	},
 	{
@@ -25,23 +25,23 @@ const services = [
 		image: require("../assets/icons/medicine.png"),
 		imageAlt: "Medicine Icon",
 		desc:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, aspernatur!",
+			"Making brand names of medicines available to the patient by providing a generic name of the medicine, which are far cheaper and easily available.",
 		link: "/dashboard/medicine",
 	},
 	{
-		title: "Book A Appointment",
+		title: "Book An Appointment",
 		image: require("../assets/icons/doctor.png"),
 		imageAlt: "Doctor Icon",
 		desc:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, aspernatur!",
+			"Patients can book online appointments with a specific doctor and can get prescription afterwards.",
 		link: "/dashboard/doctor",
 	},
 	{
-		title: "Heart Health Predection",
+		title: "Heart Health Prediction",
 		image: require("../assets/icons/heart.png"),
 		imageAlt: "Heart Icon",
 		desc:
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, aspernatur!",
+			"Patients can know the health of their heart by providing very basic details.",
 		link: "/dashboard/heart",
 	},
 ];

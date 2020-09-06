@@ -26,11 +26,9 @@ const Cancer = () => {
 		<div className="Cancer">
 			<div className="container">
 				<div>
-					<h1>Cancer Predection</h1>
+					<h1>Cancer Prediction</h1>
 					<p className="content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Fuga cupiditate repudiandae quos natus repellat?
-						Reiciendis excepturi maiores recusandae ipsam a.
+					Breast Cancer detection which will be able to predict whether the cells are cancerous or not.
 					</p>
 				</div>
 

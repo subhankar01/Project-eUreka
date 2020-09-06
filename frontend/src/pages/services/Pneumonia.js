@@ -26,11 +26,9 @@ const Pneumonia = () => {
 		<div className="Pneumonia">
 			<div className="container">
 				<div>
-					<h1>Pneumonia Predection</h1>
+					<h1>Pneumonia Prediction</h1>
 					<p className="content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Fuga cupiditate repudiandae quos natus repellat?
-						Reiciendis excepturi maiores recusandae ipsam a.
+					Prediction of Pneumonia and its type (Viral Or Bacterial) from the X-Ray Scans.
 					</p>
 				</div>
 				<button className="primary" onClick={() => getResults()}>

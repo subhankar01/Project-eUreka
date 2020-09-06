@@ -67,8 +67,7 @@ const SignUp = ({ history }) => {
 						</div>
 					</div>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Quam dolorem quibusdam officia,
+					Welcome to the Unified HealthCare Platform
 					</p>
 				</div>
 				<img

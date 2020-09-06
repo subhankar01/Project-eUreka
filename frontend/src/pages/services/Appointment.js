@@ -60,9 +60,7 @@ const Appointment = () => {
 				<div>
 					<h1>Book Appointment</h1>
 					<p className="content">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Fuga cupiditate repudiandae quos natus repellat?
-						Reiciendis excepturi maiores recusandae ipsam a.
+					Patients can book online appointments with a specific doctor and can get prescription afterwards.
 					</p>
 				</div>
 				<div className="appointment-form">
