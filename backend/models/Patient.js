@@ -32,14 +32,13 @@ const patientSchema = new schema({
             type : String
         },
         appointmentDate : {
-            type : String
+            type : Date
         },
         department : {
             type : String
         },
         doctor : {
-            type : ObjectId,
-            ref : "Doctor"
+            type : String,
         },
         prescription : {
             symptoms : {

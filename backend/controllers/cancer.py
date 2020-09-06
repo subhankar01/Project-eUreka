@@ -1,6 +1,7 @@
 import math
 import os
 import warnings
+import json
 import pandas as pd
 import keras as keras
 import numpy as np
@@ -74,20 +75,16 @@ def run_predictions(image_path):
             cancer.append("Invasive")
         else:
             cancer.append("Normal")
-
-    return cancer, list_images
+    res_dict = {
+        "cancer_type": cancer[0]
+    }
+    print(json.dumps(res_dict))
 
 
 def main():
     image_path = 'controllers/images/cancer/'
-    cancer, list_images = run_predictions(image_path)
-    cancer_df = pd.DataFrame({
-        "name": list_images,
-        "cancer_type": cancer
-    })
-    cancer_df.to_json('predictions.json')
-    return cancer_df
+    run_predictions(image_path)
 
 
 if __name__ == '__main__':
-    print(main())
+    main()

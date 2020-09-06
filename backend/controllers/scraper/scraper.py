@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-DRIVER_BIN = os.path.join(PROJECT_ROOT, "chromedriver_win.exe")
+DRIVER_BIN = os.path.join(PROJECT_ROOT, "chromedriver_tux")
 option = webdriver.ChromeOptions()
 option.add_argument('headless')
 
@@ -43,14 +43,15 @@ def netmeds(generic_name):
         return names, prices
     except:
         names.append("No results found")
-        prices.append("")
+        prices.append("999999")
         return names, prices
 
-def one_mg(generic_name): 
+
+def one_mg(generic_name):
     names = []
     prices = []
     try:
-        url = "https://www.1mg.com/search/all?filter=true&name=" + generic_name         
+        url = "https://www.1mg.com/search/all?filter=true&name=" + generic_name
         driver = webdriver.Chrome(options=option)
         driver.get(url)
         res = driver.execute_script("return document.documentElement.outerHTML")
@@ -66,7 +67,7 @@ def one_mg(generic_name):
         return names, prices
     except:
         names.append("No results found")
-        prices.append("")
+        prices.append("999999")
         return names, prices
 
 
@@ -89,13 +90,16 @@ def main(generic):
             "Source": source
         }
     )
+    df.sort_values(by=['Price'], inplace=True)
     try:
-        df_json = df.to_dict(orient="records")
+        df_json = df.iloc[:10, :].to_dict(orient="records")
+
     except:
         print("error creating file")
-    # print(df.to_json(orient='records'))
+
     try:
         print(json.dumps(df_json))
+
     except:
         print("error printing")
 

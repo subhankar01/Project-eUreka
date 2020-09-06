@@ -17,10 +17,36 @@ const doctorSchema = new schema({
         type : String,
         default : "doctor"
     },
-    appointments : [{
+    appointments : [{ 
         patient : {
             type : ObjectId,
             ref : "Patient"
+        },
+        symptoms : {
+            type : String
+        },
+        appointmentDate : {
+            type : Date
+        },
+        department : {
+            type : String
+        },
+        doctor : {
+            type : String,
+        },
+        prescription : {
+            symptoms : {
+                type : String
+            },
+            medicine : {
+                type : String
+            },
+            comments : {
+                type : String
+            },
+            date : {
+                type : Date
+            }
         }
     }],
     password : {
