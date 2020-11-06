@@ -1,6 +1,6 @@
 # Eureka
 
-A unified health care platform which connects patients and doctors.
+A unified health care platform which connects patients and doctors!
 
 ## Description
 
